@@ -1,0 +1,51 @@
+---
+title: "Dymanic meta-analysis"
+format: html
+editor: visual
+---
+
+## What are we doing?
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>. In this case, we want to create a simple dynamic report, but more complex webpages can be build (e.g. <https://ibartomeus.github.io/CropPollinationModels/>)
+
+## Steps:
+
+### Read data
+
+We will use here...
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+#| label: read data
+#| echo: true
+#| warning: false
+#Read and understand GLiTRS data
+#Link to the data in raw version (right click on Raw button). Path explained in Readme.
+#githubURL <- "https://github.com/Joemillard/GlitrsDynametaLocal/raw/refs/heads    /master/inst/shiny_data/current_data.rds" #alternative data.
+
+githubURL <- "https://github.com/Joemillard/GlitrsDynametaLocal/raw/refs/heads/master/inst/shiny_data/prior_data.rds"
+d <- readRDS(url(githubURL))
+ts <- timestamp(prefix = "", suffix = "", quiet = T)
+```
+
+Note that we want to show both the code and the output, so we tagged `echo: true`. The `echo: false` option disables the printing of code (only output is displayed). We don't want ro see any warning (`false`).
+
+We can indicate that the data was read in ´r ts´. If you see this on html, note that I did call the last value from r direcly. You can do this by typing ´r ts´.
+
+### Make some analysis
+
+Next, we want to explore a bit the data. Choose your favorite analysis and play a bit.
+
+```{r}
+#| label: a simple plot
+#| echo: true
+#unique(d2$Effect_size_type) #used to know which factors the effect type column can take
+#I subset only log ratios
+d_LR <- subset(d, Effect_size_type == "LogRR")
+#Now, I plot effect size against time of publication
+scatter.smooth(d_LR$Effect_size ~ d_LR$Year, las = 1) #Note that basic R can do decent plots. gggplot is not invoked here.
+
+```
+
+Surprisingly (to me), there is an (untested) trend to observe larger (and more variable) effect sizes in recent time periods!
