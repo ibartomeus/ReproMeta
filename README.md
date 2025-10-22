@@ -16,13 +16,16 @@ Content of this repo:
 
 - README.md: The most important file to understand what this repo is about. 
 All your projects need a README.md
-- `workflow.qmd`: Step by ste guide on how to be reproducible, open, and a very cool R coneiseure.
+- `workflow.qmd` (and .html): Step by step guide on how to be reproducible, open, and a very cool R connoisseur.
 This is where you should start.
 - `demo.qmd`: The skeleton of a dynamic analysis. You can clone this skeleton and create yours
-- `OpSci.qmd` (and .html): A rpesentation about Open Science
+- `OpSci.qmd` (and .html): A pesentation witha general introduction to Open Science
 - LICENCE: Always let people know what they can do with your code. In this case, its cc-by
-- `/docs`: The folder where the webpage lives.
-- `scripts`: A folder with used sripts, including setting the environment, metadata, etc...
+- `/docs`: The folder where the webpage lives. In this case, the metadata.
+- `/scripts`: A folder with used sripts, including setting the environment, metadata, etc...
+- `/data`: Where metadata lives.
+- `/renv`: Where the environment used details live. `rend.lock`contains the list of packages used.
+- Other folders contain the libraries and images for the .qmd documents.
 
 
 
