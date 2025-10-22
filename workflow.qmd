@@ -49,15 +49,24 @@ editor: visual
 
 -   Add it to README.md: e.g. [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) (which you get through this code: `[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)`
 
-## Make the document visible on github 
+## If releasing code: Testthat and renv
 
--   In GitHub go to `Settings/Pages` and enable webpage creation.
+-   Defensive programming ([examples](http://adv-r.had.co.nz/Exceptions-Debugging.html#defensive-programming)) and maybe functionalize your code
 
--   Many options are possible, but a simple `Deploy from branch`, main in `/doc` should work.
+-   Unit testing ([testthat](https://testthat.r-lib.org/))
 
--   GitHub will look for a `index.html` and a `.nojekyll` file.
+    -   Check impossible values vs improbable values
 
--   Link it to the GitHub "About" section in the right column.
+-   Track software versions ([Renv](https://rstudio.github.io/renv/articles/renv.html))
+
+-   Code review / Pair programming
+
+## If releasing data, add Metadata
+
+-   Standardize coding (4_NitrogenPhosphurous \> 4NP \> 4)
+-   Never edit the master file
+-   Use [tidy](http://vita.had.co.nz/papers/tidy-data.pdf) data structures and plain, standard and open formats (e.g. csv)
+-   Metadata ([Dataspice](https://cran.r-project.org/web/packages/dataspice/vignettes/overview.html): creates computer (JSON, EML) and human readable (html) metadata)
 
 ## Make a release and link it to Zenodo
 
@@ -77,24 +86,15 @@ editor: visual
 
 -   Think on adding a `News.md`
 
-## If releasing code: Testthat and renv
+## Make the document/webpage visible on github 
 
--   Defensive programming ([examples](http://adv-r.had.co.nz/Exceptions-Debugging.html#defensive-programming)) and maybe functionalize your code
+-   In GitHub go to `Settings/Pages` and enable webpage creation.
 
--   Unit testing ([testthat](https://testthat.r-lib.org/))
+-   Many options are possible, but a simple `Deploy from branch`, `main` in `/docs` should work.
 
-    -   Check impossible values vs improbable values
+-   GitHub will look for a `index.html` and a `.nojekyll` file.
 
--   Track software versions ([Renv](https://rstudio.github.io/renv/articles/renv.html))
-
--   Code review / Pair programming
-
-## If releasing data, add Metadata
-
--   Standardize coding (4_NitrogenPhosphurous \> 4NP \> 4)
--   Never edit the master file
--   Use [tidy](http://vita.had.co.nz/papers/tidy-data.pdf) data structures and plain, standard and open formats (e.g. csv)
--   Metadata ([Dataspice](https://cran.r-project.org/web/packages/dataspice/vignettes/overview.html): creates computer (JSON, EML) and human readable (html) metadata)
+-   You can link it to the GitHub "About" section in the right column.
 
 ## Issues: Templates.
 
