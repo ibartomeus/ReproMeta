@@ -9,9 +9,9 @@ editor: visual
 
 ![](images/clipboard-26061258.png)
 
-## Why Open Science? 
+## Why Open Science?
 
-## Why Open Science? 
+## Why Open Science?
 
 -   Trust
 
@@ -37,25 +37,25 @@ editor: visual
 
 -   ...
 
-## Open Science? 
+## Open Science?
 
 -   Replicability: same/similar methods, different data
 
 -   Reproducibility: same methods, same data
 
-## Is Ecology replicable? 
+## Is Ecology replicable?
 
-![](images/Screenshot 2025-10-19 at 21.19.20.png)
+![](images/Screenshot%202025-10-19%20at%2021.19.20.png)
 
 ## Why reproducibility?
 
--   Plan Ahead
+-   For you: Plan Ahead
 
     ![](images/clipboard-3065949338.png)
 
 ## Is Science reproducible?
 
-![](images/Screenshot 2025-10-19 at 21.20.40.png)
+![](images/Screenshot%202025-10-19%20at%2021.20.40.png)
 
 ## Data usability
 
@@ -67,7 +67,7 @@ editor: visual
 
 ## Code availability?
 
-![](images/Screenshot 2025-10-19 at 21.23.46.png){width="324"}
+![](images/Screenshot%202025-10-19%20at%2021.23.46.png){width="324"}
 
 Culina et al. 2020 (Data: 2015-2019; n = 346)
 
@@ -87,7 +87,7 @@ Open, reliable and transparent science is a path, not and end point.
 
 -   Work iteratively. One step at a time.
 
--   We stand on the shoulders of giants such as [rOpenSci](https://ropensci.org/) and [Paco Rodriguez](https://github.com/Pakillo) (or you don't need to walk this path alone, find your community)
+-   We stand on the shoulders of giants such as [rOpenSci](https://ropensci.org/) , [SORTEE](https://sortee.org/), and [Paco Rodriguez](https://github.com/Pakillo) (or you don't need to walk this path alone, find your community)
 
 ## Conclusions
 
