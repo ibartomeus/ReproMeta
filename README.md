@@ -19,8 +19,10 @@ All your projects need a README.md
 - `workflow.qmd`: Step by ste guide on how to be reproducible, open, and a very cool R coneiseure.
 This is where you should start.
 - `demo.qmd`: The skeleton of a dynamic analysis. You can clone this skeleton and create yours
-- Licence: Always let people know what they can do with your code. In this case, its cc-by
-- ...  
+- `OpSci.qmd` (and .html): A rpesentation about Open Science
+- LICENCE: Always let people know what they can do with your code. In this case, its cc-by
+- `/docs`: The folder where the webpage lives.
+- `scripts`: A folder with used sripts, including setting the environment, metadata, etc...
 
 
 
