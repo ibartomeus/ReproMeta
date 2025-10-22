@@ -1,0 +1,68 @@
+{
+  "@context": "http://schema.org",
+  "type": "Dataset",
+  "name": "GLiTRS",
+  "creator": [
+    {
+      "type": "Person",
+      "id": "0000-0001-7893-4389",
+      "email": "ibartomeus@ebd.scic.es",
+      "affiliation": "EBD-CSIC",
+      "name": "Ignasi Bartomeus"
+    }
+  ],
+  "description": "a set of effect sizes corresponding to the effect of anthropogenic activities on insects, published by Diversity and Distributions under the title “A multi-threat meta-analytic database for understanding insect biodiversity change”.",
+  "datePublished": 2025,
+  "keywords": ["insects", "biodiversity", "global change"],
+  "funder": null,
+  "temporalCoverage": "1970/2022",
+  "license": "MIT",
+  "spatialCoverage": {
+    "type": "Place",
+    "name": "worldwide",
+    "geo": {
+      "type": "GeoShape",
+      "box": "175.7779 68.68333 -149.7167 -45.2889"
+    }
+  },
+  "variableMeasured": [
+    {
+      "type": "PropertyValue",
+      "unitText": "ID",
+      "name": "Paper_ID",
+      "description": "paper unique ID"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "text",
+      "name": "Title",
+      "description": "Title of the published paper"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "numeric",
+      "name": "Effect_size",
+      "description": "Effect size reported in previous analysis"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "Cathegorical",
+      "name": "Effect_size_type",
+      "description": "Type of effect size"
+    },
+    {
+      "type": "PropertyValue",
+      "unitText": "...",
+      "name": "...",
+      "description": "other variables not specified"
+    }
+  ],
+  "distribution": [
+    {
+      "type": "DataDownload",
+      "name": "prior_data",
+      "contentUrl": "https://github.com/Joemillard/GlitrsDynametaLocal/raw/refs/heads/master/inst/shiny_data/prior_data.rds",
+      "encodingFormat": "rds"
+    }
+  ]
+}

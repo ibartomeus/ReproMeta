@@ -1,0 +1,6 @@
+fileName,variableName,description,unitText
+prior_data,Paper_ID,paper unique ID,ID
+prior_data,Title,Title of the published paper,text
+prior_data,Effect_size,Effect size reported in previous analysis,numeric
+prior_data,Effect_size_type,Type of effect size,Cathegorical
+prior_data,...,other variables not specified,...
