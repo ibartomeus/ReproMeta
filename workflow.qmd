@@ -86,7 +86,7 @@ editor: visual
 
 -   Think on adding a `News.md`
 
-## Make the document/webpage visible on github 
+## Make the document/webpage visible on github
 
 -   In GitHub go to `Settings/Pages` and enable webpage creation.
 
@@ -130,8 +130,8 @@ Github actions e.g. <https://github.com/ibartomeus/CropPollinationModels>
 
 -   Plan accordingly (use standard open formats)
 
--   Will we see [living papers]((e.g. living figures https://www.nature.com/articles/nature.2015.17382)) in our lifetime?
+-   Will we see [living papers]((e.g.%20living%20figures%20https://www.nature.com/articles/nature.2015.17382)) in our lifetime?
 
-## Acknowledgement: 
+## Acknowledgement:
 
 -   Previous workshops: <https://github.com/RadicalCommEcol/Open_science/blob/main/ORT_Science.qmd>

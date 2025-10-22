@@ -349,7 +349,7 @@ I. Bartomeus
 <h2>Create the actual dynamic document</h2>
 <ul>
 <li><p>Dynamic documents combine executable code and formatted text. <a href="https://quarto.org/">Quarto</a> is the current standard.</p></li>
-<li><p>Text is annotaed using Markdown flavored syntax.</p></li>
+<li><p>Text is annotated using Markdown flavored syntax.</p></li>
 <li><p>They can easily be turned into <a href="https://quarto.org/docs/websites/">webpages</a>, <a href="https://quarto.org/docs/presentations/">presentations</a> and <a href="https://quarto.org/docs/interactive/">interactive</a> documents.</p></li>
 </ul>
 </section>
@@ -360,44 +360,25 @@ I. Bartomeus
 <li><p>Or open a new empty Quarto document (upper-right corner in Rstudio).</p></li>
 </ul>
 </section>
-<section id="add-a-read-me-and-a-licence" class="slide level2">
-<h2>Add a Read Me and a licence</h2>
+<section id="add-a-readme-and-a-licence" class="slide level2">
+<h2>Add a ReadMe and a licence</h2>
 <ul>
 <li><p>Explain people what you are doing: README.md file.</p></li>
 <li><p>.md is better here because is automatically rendered by GitHub.</p></li>
-<li><p>Explain people what they can do with your project: Licence it.</p></li>
+<li><p>Explain people what they can do with your project: Licence it!</p></li>
 <li><p>Other useful files: <code>.gitignore</code>, <code>.Rproj</code></p></li>
 </ul>
 </section>
 <section id="licenses" class="slide level2">
 <h2>Licenses</h2>
 <ul>
-<li><p><code>LICENCE</code> txt file</p></li>
+<li><p>Add a <code>LICENCE</code> txt file</p>
+<ul>
 <li><p>Data: Creative commons: CC-BY</p></li>
 <li><p>Code: MIT</p></li>
+</ul></li>
 <li><p><a href="https://choosealicense.com/">Choose a licence</a></p></li>
 <li><p>Add it to README.md: e.g.&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/"><img data-src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License: CC BY 4.0"></a> (which you get through this code: <code>[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)</code></p></li>
-</ul>
-</section>
-<section id="make-the-document-visible-on-github" class="slide level2">
-<h2>Make the document visible on github</h2>
-<ul>
-<li><p>In GitHub go to <code>Settings/Pages</code> and enable webpage creation.</p></li>
-<li><p>Many options are possible, but a simple <code>Deploy from branch</code>, main in <code>/doc</code> should work.</p></li>
-<li><p>GitHub will look for a <code>index.html</code> and a <code>.nojekyll</code> file</p></li>
-<li><p>Link it to the GitHub “About” section in the right column.</p></li>
-</ul>
-</section>
-<section id="make-a-release-and-link-it-to-zenodo" class="slide level2">
-<h2>Make a release and link it to Zenodo</h2>
-<ul>
-<li><p>Zenodo gives you permanent stable DOI</p></li>
-<li><p>Log in to <a href="https://zenodo.org/" class="uri">https://zenodo.org/</a> (with your GitHub account).</p></li>
-<li><p>Go to /GitHub in the top main menu and update your repos. Flip the switch of your repo.</p></li>
-<li><p>In GitHub, go to Releases (right column) and create a new one.</p></li>
-<li><p>Versioning should use incremental numbers for minor and major updates (0.1, 0.2, 1.0, 1.2, …)</p></li>
-<li><p>Go back to Zenodo to collect your DOI and add it to README.md file.</p></li>
-<li><p>Think on adding a <code>News.md</code></p></li>
 </ul>
 </section>
 <section id="if-releasing-code-testthat-and-renv" class="slide level2">
@@ -410,7 +391,6 @@ I. Bartomeus
 </ul></li>
 <li><p>Track software versions (<a href="https://rstudio.github.io/renv/articles/renv.html">Renv</a>)</p></li>
 <li><p>Code review / Pair programming</p></li>
-<li></li>
 </ul>
 </section>
 <section id="if-releasing-data-add-metadata" class="slide level2">
@@ -422,15 +402,41 @@ I. Bartomeus
 <li>Metadata (<a href="https://cran.r-project.org/web/packages/dataspice/vignettes/overview.html">Dataspice</a>: creates computer (JSON, EML) and human readable (html) metadata)</li>
 </ul>
 </section>
+<section id="make-a-release-and-link-it-to-zenodo" class="slide level2">
+<h2>Make a release and link it to Zenodo</h2>
+<ul>
+<li><p>Zenodo gives you permanent stable DOI</p></li>
+<li><p>Log in to <a href="https://zenodo.org/" class="uri">https://zenodo.org/</a> (with your GitHub account).</p></li>
+<li><p>Go to /GitHub in the top main menu and update your repos. Flip the switch of your repo.</p></li>
+<li><p>In GitHub, go to Releases (right column) and create a new one.</p></li>
+</ul>
+</section>
+<section id="make-a-release-and-link-it-to-zenodo-1" class="slide level2">
+<h2>Make a release and link it to Zenodo</h2>
+<ul>
+<li><p>Versioning should use incremental numbers for minor and major updates (0.1, 0.2, 1.0, 1.2, …)</p></li>
+<li><p>Go back to Zenodo to collect your DOI and add it to README.md file.</p></li>
+<li><p>Think on adding a <code>News.md</code></p></li>
+</ul>
+</section>
+<section id="make-the-documentwebpage-visible-on-github" class="slide level2">
+<h2>Make the document/webpage visible on github</h2>
+<ul>
+<li><p>In GitHub go to <code>Settings/Pages</code> and enable webpage creation.</p></li>
+<li><p>Many options are possible, but a simple <code>Deploy from branch</code>, <code>main</code> in <code>/docs</code> should work.</p></li>
+<li><p>GitHub will look for a <code>index.html</code> and a <code>.nojekyll</code> file.</p></li>
+<li><p>You can link it to the GitHub “About” section in the right column.</p></li>
+</ul>
+</section>
 <section id="issues-templates." class="slide level2">
 <h2>Issues: Templates.</h2>
-<p>Explain how to contribute (e.g.&nbsp;Github issues)</p>
-</section>
-<section id="talk-about-github-actions-to-automate" class="slide level2">
-<h2>Talk about github actions to automate</h2>
 <ul>
-<li>Github actions e.g.&nbsp;<a href="https://github.com/ibartomeus/CropPollinationModels" class="uri">https://github.com/ibartomeus/CropPollinationModels</a></li>
+<li>Explain how to contribute and report bugs (e.g.&nbsp;Github issues)</li>
 </ul>
+</section>
+<section id="automation-github-actions" class="slide level2">
+<h2>Automation: github actions</h2>
+<p>Github actions e.g.&nbsp;<a href="https://github.com/ibartomeus/CropPollinationModels" class="uri">https://github.com/ibartomeus/CropPollinationModels</a></p>
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary:</h2>
@@ -446,7 +452,11 @@ I. Bartomeus
 </section>
 <section id="all-will-change" class="slide level2">
 <h2>All will change</h2>
-<p><a href="https://www.nature.com/articles/nature.2015.17382" class="uri">https://www.nature.com/articles/nature.2015.17382</a></p>
+<ul>
+<li><p>Tools evolve</p></li>
+<li><p>Plan accordingly (use standard open formats)</p></li>
+<li><p>Will we see <a href="(e.g.%20living%20figures%20https://www.nature.com/articles/nature.2015.17382)">living papers</a> in our lifetime?</p></li>
+</ul>
 </section>
 <section id="acknowledgement" class="slide level2">
 <h2>Acknowledgement:</h2>
