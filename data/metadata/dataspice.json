@@ -5,10 +5,10 @@
   "creator": [
     {
       "type": "Person",
-      "id": "0000-0001-7893-4389",
-      "email": "ibartomeus@ebd.scic.es",
+      "id": "unknown",
+      "email": "unknown",
       "affiliation": "EBD-CSIC",
-      "name": "Ignasi Bartomeus"
+      "name": "Joe Millard"
     }
   ],
   "description": "a set of effect sizes corresponding to the effect of anthropogenic activities on insects, published by Diversity and Distributions under the title “A multi-threat meta-analytic database for understanding insect biodiversity change”.",
